@@ -9,7 +9,7 @@ function AgentList() {
     <div>
       {agents?.map((agent) => (
         <div key={agent.id}>
-          <img src={agent.image} alt={agent.firstName} />
+          <img src={agent.profileImage} alt={agent.firstName} />
           <p>{agent.firstName}</p>
           <p>{agent.email}</p>
           <p>{agent.phone}</p>
