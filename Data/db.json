@@ -93,6 +93,22 @@
       "location": "Kileleshwa",
       "price": "10000",
       "image": "https://picsum.photos/seed/property3/600/400"
+    },
+    {
+      "id": "c2e0",
+      "name": "Daisy Apartments",
+      "unit": "55",
+      "location": "uptown",
+      "price": "15000",
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60%22"
+    },
+    {
+      "id": "83bb",
+      "name": "Orchid Apartments",
+      "unit": "20",
+      "location": "Kayole",
+      "price": "1500",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60%22"
     }
   ],
   "tenants": [

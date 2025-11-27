@@ -111,7 +111,7 @@ function PropertyList() {
           Add Property
         </button>
       </form>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {properties?.map((property) => (
           <PropertyCard
             key={property.id}
