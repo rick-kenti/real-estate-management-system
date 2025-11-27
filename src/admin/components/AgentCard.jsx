@@ -11,7 +11,7 @@ function AgentCard({ fName, lName, email, image }) {
           {fName} {lName}
         </h3>
         <p>{email}</p>
-        <div className="flex gap-4">
+        <div className="grid grid-cols-3 gap-4">
           <button className="rounded-md bg-amber-400 px-4 py-2">Edit</button>
           <button className="rounded-md bg-green-600 px-4 py-2">View</button>
           <button className="rounded-md bg-red-600 px-4 py-2">Delete</button>

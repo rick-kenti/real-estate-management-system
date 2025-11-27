@@ -49,6 +49,7 @@ function PropertContext({ children }) {
         agentUrl,
         addNewAgent,
         addNewProperty,
+        propertyUrl,
       }}
     >
       {children}

@@ -41,7 +41,7 @@ function PropertyList() {
     },
     body: JSON.stringify(newProperty),
   };
-  function handleAddAgent(e) {
+  function handleAddProperty(e) {
     e.preventDefault();
     fetch(propertyUrl, options)
       .then((res) => res.json())
@@ -51,7 +51,7 @@ function PropertyList() {
   return (
     <>
       <h2>Properties</h2>
-      <form onSubmit={handleAddAgent}>
+      <form onSubmit={handleAddProperty}>
         <div>
           <label htmlFor="propertyName">Property Name:</label>
           <input
@@ -111,7 +111,7 @@ function PropertyList() {
           Add Property
         </button>
       </form>
-      <div>
+      <div className="grid grid-cols-4 gap-4">
         {properties?.map((property) => (
           <PropertyCard
             key={property.id}

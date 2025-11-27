@@ -62,29 +62,37 @@
     {
       "id": 1,
       "agentId": 2,
-      "name": "apartment1",
-      "location": "myLocation1",
-      "image": "image",
-      "numOfUnits": "200",
+      "name": "Roses",
+      "location": "Kenol",
+      "image": "https://picsum.photos/seed/property3/600/400",
+      "numOfUnits": "5",
       "price": "300"
     },
     {
       "id": 2,
       "agentId": 2,
-      "name": "apartment2",
-      "location": "myLocation2",
-      "image": "image",
-      "numOfUnits": "2000",
+      "name": "Lilies",
+      "location": "Thika",
+      "image": "https://picsum.photos/seed/property2/600/400",
+      "numOfUnits": "20",
       "price": "3000"
     },
     {
       "id": 3,
       "agentId": 2,
-      "name": "apartment3",
-      "location": "myLocation3",
-      "image": "image3",
-      "numOfUnits": "20000",
+      "name": "Sunflower",
+      "location": "Ruiru",
+      "image": "https://picsum.photos/seed/property1/600/400",
+      "numOfUnits": "200",
       "price": "30000"
+    },
+    {
+      "id": "e615",
+      "name": "Lavender Apartments",
+      "unit": "50",
+      "location": "Kileleshwa",
+      "price": "10000",
+      "image": "https://picsum.photos/seed/property3/600/400"
     }
   ],
   "tenants": [
