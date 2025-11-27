@@ -50,68 +50,80 @@ function PropertyList() {
   }
   return (
     <>
-      <h2>Properties</h2>
-      <form onSubmit={handleAddProperty}>
-        <div>
-          <label htmlFor="propertyName">Property Name:</label>
-          <input
-            type="text"
-            name="propertyName"
-            id="propertyName"
-            value={propertyName}
-            onChange={handlePropertyName}
-            required
-          />
+      <h2 className="text-lg font-bold mb-8">Properties</h2>
+      <form
+        onSubmit={handleAddProperty}
+        className="shadow-lg p-4 rounded-md grid grid-cols-1 gap-4"
+      >
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="propertyName">Property Name:</label>
+            <input
+              type="text"
+              name="propertyName"
+              id="propertyName"
+              value={propertyName}
+              onChange={handlePropertyName}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="location">Location:</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              value={location}
+              onChange={handleLocation}
+              required
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="location">Location:</label>
-          <input
-            type="text"
-            name="location"
-            id="location"
-            value={location}
-            onChange={handleLocation}
-            required
-          />
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="units">Units:</label>
+            <input
+              type="number"
+              name="units"
+              id="units"
+              value={unit}
+              onChange={handleUnit}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="price">Price:</label>
+            <input
+              type="number"
+              name="price"
+              id="price"
+              value={price}
+              onChange={handlePrice}
+              required
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="units">Units:</label>
-          <input
-            type="number"
-            name="units"
-            id="units"
-            value={unit}
-            onChange={handleUnit}
-            required
-          />
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="image">Image:</label>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              value={image}
+              onChange={handleChangeImage}
+              required
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="price">Price:</label>
-          <input
-            type="number"
-            name="price"
-            id="price"
-            value={price}
-            onChange={handlePrice}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="image">Image:</label>
-          <input
-            type="text"
-            name="image"
-            id="image"
-            value={image}
-            onChange={handleChangeImage}
-            required
-          />
-        </div>
-        <button type="submit" className="cursor-pointer">
+        <button
+          type="submit"
+          className="cursor-pointer rounded-md bg-green-600 px-4 py-2"
+        >
           Add Property
         </button>
       </form>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 mt-8">
         {properties?.map((property) => (
           <PropertyCard
             key={property.id}

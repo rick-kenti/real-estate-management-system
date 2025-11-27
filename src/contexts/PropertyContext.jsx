@@ -40,6 +40,8 @@ function PropertContext({ children }) {
   function addNewProperty(newProperty) {
     setProperties([...properties, newProperty]);
   }
+
+  const availableProperties = properties?.map((property) => property.name);
   return (
     <property.Provider
       value={{
@@ -50,6 +52,7 @@ function PropertContext({ children }) {
         addNewAgent,
         addNewProperty,
         propertyUrl,
+        availableProperties,
       }}
     >
       {children}

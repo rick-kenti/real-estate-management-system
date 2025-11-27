@@ -66,7 +66,8 @@
       "location": "Kenol",
       "image": "https://picsum.photos/seed/property3/600/400",
       "numOfUnits": "5",
-      "price": "300"
+      "price": "300",
+      "units": ["r1", "r2", "r3", "r4", "r5"]
     },
     {
       "id": 2,
@@ -74,8 +75,9 @@
       "name": "Lilies",
       "location": "Thika",
       "image": "https://picsum.photos/seed/property2/600/400",
-      "numOfUnits": "20",
-      "price": "3000"
+      "numOfUnits": "10",
+      "price": "3000",
+      "units": ["l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8", "l9", "l10"]
     },
     {
       "id": 3,
@@ -83,32 +85,36 @@
       "name": "Sunflower",
       "location": "Ruiru",
       "image": "https://picsum.photos/seed/property1/600/400",
-      "numOfUnits": "200",
-      "price": "30000"
+      "numOfUnits": "8",
+      "price": "6000",
+      "units": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"]
     },
     {
       "id": "e615",
       "name": "Lavender Apartments",
-      "unit": "50",
+      "unit": "4",
       "location": "Kileleshwa",
       "price": "10000",
-      "image": "https://picsum.photos/seed/property3/600/400"
+      "image": "https://picsum.photos/seed/property3/600/400",
+      "units": ["l1", "l2", "l3", "l4"]
     },
     {
       "id": "c2e0",
       "name": "Daisy Apartments",
-      "unit": "55",
+      "unit": "5",
       "location": "uptown",
       "price": "15000",
-      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60%22"
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60%22",
+      "units": ["d1", "d2", "d3", "d4", "d5"]
     },
     {
       "id": "83bb",
       "name": "Orchid Apartments",
-      "unit": "20",
+      "unit": "2",
       "location": "Kayole",
       "price": "1500",
-      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60%22"
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60%22",
+      "units": ["o1", "o2"]
     }
   ],
   "tenants": [
@@ -121,7 +127,8 @@
       "status": "active",
       "password": "password",
       "unit": "m1",
-      "profileImage": "profileImage1"
+      "profileImage": "https://randomuser.me/api/portraits/women/32.jpg",
+      "property": "Orchid Apartments"
     },
     {
       "id": 2,
@@ -132,7 +139,8 @@
       "status": "active",
       "password": "password",
       "unit": "m3",
-      "profileImage": "profileImage2"
+      "profileImage": "https://randomuser.me/api/portraits/women/32.jpg",
+      "property": "Daisy Apartments"
     },
     {
       "id": 3,
@@ -143,7 +151,8 @@
       "status": "active",
       "password": "password",
       "unit": "m2",
-      "profileImage": "profileImage3"
+      "profileImage": "https://randomuser.me/api/portraits/women/32.jpg",
+      "property": "Lavender Apartments"
     }
   ]
 }

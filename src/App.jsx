@@ -4,6 +4,7 @@ import AdminDashboard from "./admin/pages/AdminDashboard";
 import Login from "./Login";
 import AgentList from "./admin/components/AgentList";
 import PropertyList from "./admin/components/PropertyList";
+import Tenants from "./Tenants";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               path="/AdminDashboard/Properties"
               element={<PropertyList />}
             />
+            <Route path="/AdminDashboard/Tenants" element={<Tenants />} />
           </Route>
         </Routes>
       </BrowserRouter>
